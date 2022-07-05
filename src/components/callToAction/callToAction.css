@@ -1,0 +1,86 @@
+.callToAction {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: var(--gradient-bar);
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.callToAction-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.callToAction-container p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0E0E0E
+}
+
+.callToAction-container h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.callToAction-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.callToAction-btn button {
+    background: #000000;
+    border-radius: 40px;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.callToAction-btn button:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in;
+}
+
+@media screen and (max-width: 700px) {
+    .callToAction {
+        flex-direction: column;
+    }
+
+    .callToAction-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width:55px) {
+    .callToAction {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    .callToAction-container h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .callToAction-btn button {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
